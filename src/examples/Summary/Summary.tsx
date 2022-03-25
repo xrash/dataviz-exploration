@@ -33,6 +33,12 @@ export const Summary = () => (
       <li>
         <Link href="/deck-gl">deck.gl</Link>
       </li>
+      <li>
+        <Link href="/echarts">Echarts</Link>
+      </li>
+      <li>
+        <Link href="/comparison">Comparison</Link>
+      </li>
     </ul>
   </div>
 )

@@ -7,7 +7,6 @@ import { LetterFrequency } from '@visx/mock-data/lib/mocks/letterFrequency'
 
 // We'll use some mock data from `@visx/mock-data` for this.
 const data = letterFrequency
-console.log('data', data)
 
 // Define the graph dimensions and margins
 const width = 500

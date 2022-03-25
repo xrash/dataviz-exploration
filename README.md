@@ -116,6 +116,7 @@ Research on current state of data visualization, particularly chart generation, 
  - google visualization or react-google-charts
  - @observable/plot
  - highcharts
+ - echarts
 
 ### Moderately confident
 
@@ -126,12 +127,3 @@ Research on current state of data visualization, particularly chart generation, 
 
  - victory
  - deck.gl
-
-
-
-
- - difficulty (learning curve and effort to build stuff with it even after having learned)
- - coolness (how fancy the tech is and how useful the lessons learned are to the developer)
- - result (how good looking and useful the charts actually are)
- 
-

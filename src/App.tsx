@@ -11,6 +11,8 @@ import { Visx } from './examples/Visx'
 import { D3 } from './examples/D3'
 import { ObservablePlot } from './examples/ObservablePlot'
 import { DeckGL } from './examples/DeckGL'
+import { Echarts } from './examples/Echarts'
+import { Comparison } from './examples/Comparison'
 
 function App() {
   return (
@@ -45,8 +47,14 @@ function App() {
       <Route path="/observable-plot">
         {() => <ObservablePlot />}
       </Route>
+      <Route path="/echarts">
+        {() => <Echarts />}
+      </Route>
       <Route path="/deck-gl">
         {() => <DeckGL />}
+      </Route>
+      <Route path="/comparison">
+        {() => <Comparison />}
       </Route>
     </div>
   )
