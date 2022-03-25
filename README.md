@@ -1,6 +1,6 @@
 # state of dataviz for js/react/react native
 
-Research on current state of chart libraries for JavaScript, React and React Native.
+Research on current state of data visualization, particularly chart generation, for JavaScript, React and React Native.
 
 ## A brief overview of each library
 
@@ -96,6 +96,16 @@ Research on current state of chart libraries for JavaScript, React and React Nat
 
 ---
 
+### deck.gl
+
+- JS library difficult to use with React
+- Extremely complicated and severely undocummented API
+- Super complicated to use
+- Powerful but specific to geospatial visualization
+- No TS support
+
+---
+
 ## Level of confidence on choosing each library
 
 ### Highly confident
@@ -115,6 +125,7 @@ Research on current state of chart libraries for JavaScript, React and React Nat
 ### Less confident
 
  - victory
+ - deck.gl
 
 
 

@@ -10,6 +10,7 @@ import { GoogleVisualization } from './examples/GoogleVisualization'
 import { Visx } from './examples/Visx'
 import { D3 } from './examples/D3'
 import { ObservablePlot } from './examples/ObservablePlot'
+import { DeckGL } from './examples/DeckGL'
 
 function App() {
   return (
@@ -43,6 +44,9 @@ function App() {
       </Route>
       <Route path="/observable-plot">
         {() => <ObservablePlot />}
+      </Route>
+      <Route path="/deck-gl">
+        {() => <DeckGL />}
       </Route>
     </div>
   )

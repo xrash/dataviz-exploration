@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@deck.gl/layers": "^8.7.2",
+    "@deck.gl/react": "^8.7.2",
     "@nivo/core": "^0.79.0",
     "@nivo/line": "^0.79.1",
     "@observablehq/plot": "^0.4.2",
@@ -23,6 +25,7 @@
     "@visx/shape": "^2.4.0",
     "d3": "^7.3.0",
     "d3-array": "^3.1.1",
+    "deck.gl": "^8.7.2",
     "highcharts": "^10.0.0",
     "highcharts-react-official": "^3.1.0",
     "react": "^17.0.2",

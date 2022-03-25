@@ -30,6 +30,9 @@ export const Summary = () => (
       <li>
         <Link href="/observable-plot">observable/plot</Link>
       </li>
+      <li>
+        <Link href="/deck-gl">deck.gl</Link>
+      </li>
     </ul>
   </div>
 )
