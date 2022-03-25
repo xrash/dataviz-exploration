@@ -34,10 +34,10 @@ export const Summary = () => (
         <Link href="/deck-gl">deck.gl</Link>
       </li>
       <li>
-        <Link href="/echarts">Echarts</Link>
+        <Link href="/echarts">echarts</Link>
       </li>
       <li>
-        <Link href="/comparison">Comparison</Link>
+        <Link href="/comparison">comparison of all libs</Link>
       </li>
     </ul>
   </div>
