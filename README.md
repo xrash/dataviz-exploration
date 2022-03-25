@@ -106,6 +106,15 @@ Research on current state of data visualization, particularly chart generation, 
 
 ---
 
+### Echarts
+
+- JS library with types
+- A bit complicated docs
+- Powerful gallery of examples, really lots of types of visualizations
+- No official React support but not very difficult to use (there's a 3rd party lib providing a wrapper)
+
+---
+
 ## Level of confidence on choosing each library
 
 ### Highly confident
