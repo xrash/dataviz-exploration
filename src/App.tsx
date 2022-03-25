@@ -1,26 +1,51 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import { Route } from 'wouter'
+import { ReactVega } from './examples/ReactVega'
+import { Summary } from './examples/Summary'
+import { Highcharts } from './examples/Highcharts'
+import { Victory } from './examples/Victory'
+import { Nivo } from './examples/Nivo'
+import { ReactGoogleCharts } from './examples/ReactGoogleCharts'
+import { GoogleVisualization } from './examples/GoogleVisualization'
+import { Visx } from './examples/Visx'
+import { D3 } from './examples/D3'
+import { ObservablePlot } from './examples/ObservablePlot'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Route path="/">
+        {() => <Summary />}
+      </Route>
+      <Route path="/react-vega">
+        {() => <ReactVega />}
+      </Route>
+      <Route path="/highcharts">
+        {() => <Highcharts />}
+      </Route>
+      <Route path="/victory">
+        {() => <Victory />}
+      </Route>
+      <Route path="/nivo">
+        {() => <Nivo />}
+      </Route>
+      <Route path="/react-google-charts">
+        {() => <ReactGoogleCharts />}
+      </Route>
+      <Route path="/google-visualization">
+        {() => <GoogleVisualization />}
+      </Route>
+      <Route path="/visx">
+        {() => <Visx />}
+      </Route>
+      <Route path="/d3">
+        {() => <D3 />}
+      </Route>
+      <Route path="/observable-plot">
+        {() => <ObservablePlot />}
+      </Route>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

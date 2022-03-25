@@ -1,0 +1,1 @@
+export { Nivo } from './Nivo'

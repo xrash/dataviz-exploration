@@ -1,0 +1,1 @@
+export { ReactVega } from './ReactVega'
