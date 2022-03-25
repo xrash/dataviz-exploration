@@ -1,46 +1,126 @@
-# Getting Started with Create React App
+# state of dataviz for js/react/react native
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Research on current state of chart libraries for JavaScript, React and React Native.
 
-## Available Scripts
+## A brief overview of each library
 
-In the project directory, you can run:
+### d3
 
-### `yarn start`
+- JS library
+- Low level primitives
+- Steep learning curve but still the most powerful library out there
+- No react native support at all but some primitives are simple calculations that can be used to generate SVGs that work in react native
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### visx
 
-### `yarn test`
+- React library
+- Apparently well maintained
+- Low level primitives but not as low as D3
+- Actually based on D3, meaning we can resort to D3 if needed
+- Even though it is a somewhat low level libraries, there are really good plug and play examples
+- No react native support at all but some primitives are simple calculations that can be used to generate SVGs that work in react native 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `yarn build`
+### highcharts
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- JS library
+- Not free, must pay for license
+- Has official react wrapper
+- Decent docs but a bit  IMO
+- Used to have official react native wrapper, but support was dropped (https://github.com/highcharts/highcharts-react-native)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### google charts
 
-### `yarn eject`
+- JS library
+- Quite complete, lots of charts
+- Dense docs, difficult to follow but eventually works out
+- Unintuitive to load, and load lots of unwanted stuff
+- Untyped
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### react-google-charts
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- React library wrapping google charts JS library
+- Typed and nicely wrapped for React
+- I didn't find the docs to be that good, but since it's wrapping google charts, if anything we can reference the docs for google charts or even fall back to google charts in a situation of extreme necessity
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+### react-native-chart-kit
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Univerval react native library, so it is supposed to work well in every platform
+- Works more or less well
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
+
+### nivo
+
+- React library
+- Based on d3
+- Looks cool, great docs
+- nivo-api repo seems unmaintained - we don't want that feature but it is strange
+
+---
+
+### victory
+
+- React library
+- Not based on d3
+- Charts don't look as cool
+- API looks a bit overcomplicated
+
+---
+
+### vega, vega-lite, react-vega
+
+- JS library with official support for React
+- From the creators of D3
+- Really interesting project that standardizes data visualization
+
+---
+
+### @observablehq/plot
+
+- Cool API
+- From the creators of D3
+- Doesn't have TypeScript support
+- Doesn't have official React support
+- A bit complicated docs/examples/content on the web
+- A bit too much integrated with Observable the web app
+
+---
+
+## Level of confidence on choosing each library
+
+### Highly confident
+
+ - vega, react-vega
+ - d3
+ - visx
+ - google visualization or react-google-charts
+ - @observable/plot
+ - highcharts
+
+### Moderately confident
+
+ - nivo
+ - react-native-chart-kit (this is specific to react native)
+
+### Less confident
+
+ - victory
+
+
+
+
+ - difficulty (learning curve and effort to build stuff with it even after having learned)
+ - coolness (how fancy the tech is and how useful the lessons learned are to the developer)
+ - result (how good looking and useful the charts actually are)
+ 
+
